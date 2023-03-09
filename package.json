@@ -8,5 +8,8 @@
     "start": "npx live-server src/"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
 }
