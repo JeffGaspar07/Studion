@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #999;
+}
+
+h1{
+    color: #fff;
+    font-size: 40px;
+    height: 50px;
+}
+
+.accent {
+    color: #EAAB0A;
+}
+
+.subtitle {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -5px;
+}
