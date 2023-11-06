@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studion</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&family=Tilt+Prism&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <h1>Studi<span>on</span> <span>Eventos</span></h1>
+        <h1>Studi<span class="accent">on</span> <span class="subtitle ">Eventos</span></h1>
         <ul>
             <li>
-                <a href="#">Empresa</a>
+                <a href="#" class="selected">Empresa</a>
             </li>
             <li>
                 <a href="#">Eventos</a>
@@ -30,43 +33,63 @@
 
     <header>
         <h2>.empresa</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas eos, quaerat maiores quibusdam et reprehenderit repudiandae necessitatibus corrupti inventore veritatis labore blanditiis qui, velit vitae autem, ipsam illo voluptatum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
     </header>
 
     <main>
-        <section>
+        <section class="section1">
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            <p class="paragrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            </p>
-            <img src="./images/Layer 9 copy (1) 1.png" alt="pessoa falando ao celular">
+            <p class="paragrafo2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+            <div>
+                <img src="./images/Layer 9 copy (1) 1.png" alt="pessoa falando ao celular" class="pessoa">
+            </div>
         </section>
 
-        <section>
+        <section class="section2">
             <h4>Quem Confia no nosso trabalho</h4>
             <img src="./images/logos 1.png" alt="logos de empresas parceiras">
         </section>
 
-        <section>
+        <section class="section3">
             <img src="./images/Video.jpg" alt="pessoa sentada na sacada de um predio olhando a vista ">
         </section>
     </main>
 
     <footer>
-        <h2>Studi<span>on</span> <span>Eventos</span></h2>
-        <form>
-            <label>
-                Receba news e promoções
-            </label>
-            <input type="email" placeholder="Email"/>
-            <button type="submit">Enviar</button>
-        </form>
-        <ul>
-            <li>Facebook</li>
-            <li>Whatsapp</li>
-            <li>Youtube</li>
-        </ul>
+        <div>
+        <h2>
+            Studi<span class="accent">on</span> 
+            <span class="subtitle ">Eventos</span>
+        </h2>
+            <form>
+                <label>
+                    Receba news e promoções
+                </label>
+                <input type="email" placeholder="Email"/>
+                <button type="submit">
+                    <img src="./images/icons/send2.svg" alt="enviar">
+                </button>
+            </form>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icons/youtube.svg" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
         <hr/>
         <p>Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
