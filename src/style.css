@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Montserrat;
 }
 
 nav {
@@ -12,9 +13,12 @@ nav {
 }
 
 h1{
-    color: #fff;
+    color: #FFF;
     font-size: 40px;
     height: 50px;
+    font-weight: 900;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
 }
 
 .accent {
@@ -23,7 +27,200 @@ h1{
 
 .subtitle {
     display: block;
+    margin-top: -5px;
+    color: #FFF;
     font-size: 15px;
     font-weight: 500;
-    margin-top: -5px;
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    height: 50px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #ffc501;
+}
+
+.selected {
+    color: #EAAB0A;
+}
+
+header {
+    background: url("./images/header.jpg"), lightgray 50% / cover no-repeat;
+    width: 100%;
+    height: 600px;
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+header > h2 {
+    color: #FFC501;
+    font-size: 120px;
+    font-weight: 900;
+    margin-top: 180px;
+    margin-right: 320px;
+}
+
+header > p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    width: 645px;
+    height: 67px;
+    margin-right: 270px;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 715px;
+    padding-top: 50px;
+}
+
+.section1 > h4 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 800;
+    width: 430px;
+    top: 150px;
+    left: 350px;
+}
+
+.section1 > p {
+    width: 494px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.section1 > .paragrafo1 {
+    position: absolute;
+    top: 280px;
+    left: 350px;
+}
+
+.section1 > .paragrafo2 {
+    position: absolute;
+    top: 420px;
+    left: 350px;
+}
+
+.section1 > div {
+    background: url("./images/retangulos.svg") center no-repeat;
+    position: absolute;
+    right: 150px;
+}
+
+.pessoa {
+    margin-left: 180px; 
+}
+
+.section2 {
+    background: #FFC501;
+    height: 562px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section2 > h4 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.section3 {
+    height: 837px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background: #000;
+    width: 100%;
+    height: 300px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-around;
+    width: 1149.402px;
+}
+
+footer > div > form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > div > form > label {
+    display: block;
+    width: 160px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer > div > form > input {
+    width: 312px;
+    height: 50px;
+    background: #EAAB0A;
+    border: none;
+    padding: 0 5px;
+}
+
+footer > div > form > input::placeholder {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+
+footer > div > form > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+
+footer > hr {
+    width: 1149.402px;
+    height: 0px;
+    stroke-width: 0.5px;
+    stroke: #FFF;
+}
+
+footer > p {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+
+footer > p > span {
+    color: #EAAB0A;
 }
