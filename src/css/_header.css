@@ -2,7 +2,6 @@ header {
     background: url("../images/header.jpg"), lightgray 50% / cover no-repeat;
     width: 100%;
     height: 60rem;
-    margin-top: -9rem;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -11,16 +10,26 @@ header {
 header > h2 {
     color: var(--color-secondary);
     font-size: 12rem;
+    margin-top: 10rem;
     font-weight: 900;
-    margin-top: 18rem;
-    margin-right: 32rem;
 }
 
 header > p {
     color: var(--text-primary);
     font-size: 2rem;
     font-weight: 400;
-    width: 64.5rem;
-    height: 6.7rem;
-    margin-right: 27rem;
+    width: 100%;
+    max-width: 64.5rem;
+}
+
+@media screen and (max-width: 820px) {
+    header > h2 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header > h2 {
+        font-size: 5rem;
+    }
 }
