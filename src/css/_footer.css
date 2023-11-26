@@ -1,80 +1,92 @@
-footer {
-    background: var(--bg-footer);
+.footer {
+    color: var(--text-primary);
+    background-color: var(--bg-footer);
     width: 100%;
     height: 30rem;
-    color: var(--text-primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    gap: 4rem;
+    padding: 4rem 2rem;
     text-transform: uppercase;
 }
 
 
-footer > div {
+.footer__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 114.9402rem;
 }
 
-footer > div > h2 {
+.footer__container h2 {
   font-size: 4rem;
   text-align: right;  
 }
 
-footer > div > form {
+.footer__container form {
+    width: 100%;
+    max-width: 45rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-footer > div > form > label {
+.footer__container label {
     display: block;
-    width: 16rem;
+    max-width: 16rem;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-footer > div > form > input {
-    width: 31.2rem;
-    height: 5rem;
+.footer__container input {
+    width: 100%;
+    max-width: 31.2rem;
+    height: 100%;
+    max-height: 5rem;
     background: var(--color-primary);
     border: none;
     padding: 0 0.5rem;
 }
 
-footer > div > form > input::placeholder {
+.footer__container input::placeholder {
     color: var(--text-primary);
     font-size: 1.5rem;
     font-weight: 900;
-    letter-spacing: -0.03rem;
     text-transform: uppercase;
 }
 
-footer > div > form > button {
+.footer__container button {
+    width: 100%;
+    max-width: 6rem;
+    height: 100%;
+    max-height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    width: 6rem;
-    height: 5rem;
     cursor: pointer;
 }
 
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
 footer > hr {
-    width: 114.9402rem;
-    height: 0px;
+    height: 0rem;
+    width: 100%;
+    max-width: 110rem;
     stroke-width: 0.05rem;
     stroke: var(--text-primary);
+    margin: 0 auto;
 }
 
-footer > p {
+.copyright {
     font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: -0.03rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
-footer > p > span {
+.copyright span {
     color: var(--color-primary);
 }
