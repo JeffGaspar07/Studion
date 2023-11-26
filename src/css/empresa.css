@@ -1,0 +1,57 @@
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+
+.section1 .text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    max-width: 40rem;
+}
+
+.section1 .text small {
+    font-weight: 400;
+    display: block;
+    margin-top: 6rem;
+}
+
+.lines {
+    background-image: url("../images/retangulos.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    max-width: 55rem;
+}
+
+.pessoa {
+    display: block;
+    margin: 0 auto;
+}
+
+.section2 {
+    background: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+}
+
+.section2 > h4 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.section3 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section3 img {
+    width: 100%;
+    max-width: 111rem;
+}

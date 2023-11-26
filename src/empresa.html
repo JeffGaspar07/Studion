@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studion</title>
+    <title>Studion - Empresa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/empresa.css">
 </head>
 <body>
-    <nav>
-        <a href="./">
-            <h1>
+    <nav class="nav">
+        <a href="./index.html">
+            <h1 class="logo">
                 Studi<span class="accent">on</span>'
                 <span class="subtitle ">Eventos</span>
             </h1>
         </a>
-        <ul>
+        <input id="menu-toggle" type="checkbox" />
+        ,<label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
             <li>
-                <a href="./empresa.html" >Empresa</a>
+                <a href="#" class="active">Empresa</a>
             </li>
             <li>
-                <a href="#">Eventos</a>
+                <a href="#./eventos.html">Eventos</a>
             </li>
             <li>
-                <a href="#">Galeria</a>
+                <a href="./galeria.html">Galeria</a>
             </li>
             <li>
-                <a href="#">Depoimentos</a>
+                <a href="./depoimentos.html">Depoimentos</a>
             </li>
             <li>
-                <a href="#">Contatos</a>
+                <a href="./contatos.html">Contatos</a>
             </li>
         </ul>
     </nav>
 
-    <header class="container">
-        <h2>.empresa</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+    <header style="background-image: url(./images/header-empresa.jpg);">
+        <div class="container container__header">
+            <h2>.empresa</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+        </div>    
     </header>
 
     <main>
         <section class="container section1">
-            <h4>
+            <h4 class="text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 <small>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -49,14 +55,14 @@
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                 </small>
             </h4>
-            <div>
-                <img src="./images/Layer 9 copy (1) 1.png" alt="pessoa falando ao celular" class="pessoa">
+            <div class="lines">
+                <img src="./images/pessoa.png" alt="pessoa falando ao celular" class="pessoa">
             </div>
         </section>
 
-        <section class="container section2">
-            <h4>Quem Confia no nosso trabalho</h4>
-            <img src="./images/logos 1.png" alt="logos de empresas parceiras">
+        <section class="section2">
+            <h4 class="container">Quem Confia no nosso trabalho</h4>
+            <img src="./images/logos 1.png" alt="logos de empresas parceiras" class="container">
         </section>
 
         <section class="container section3">
@@ -64,12 +70,12 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-        <h2>
-            Studi<span class="accent">on</span> 
-            <span class="subtitle ">Eventos</span>
-        </h2>
+    <footer class="footer">
+        <div class="container footer__container">
+            <h2>
+                Studi<span class="accent">on</span> 
+                <span class="subtitle ">Eventos</span>
+            </h2>
             <form>
                 <label>
                     Receba news e promoções
@@ -79,7 +85,7 @@
                     <img src="./images/icons/send2.svg" alt="enviar">
                 </button>
             </form>
-            <ul>
+            <ul class="socials">
                 <li>
                     <a href="#">
                         <img src="./images/icons/facebook.svg" alt="facebook">
@@ -98,7 +104,7 @@
             </ul>
         </div>
         <hr/>
-        <p class="container">Studi<span>on</span> - Todos os direitos reservados</p>
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
