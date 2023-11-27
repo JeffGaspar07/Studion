@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/empresa.css">
-    <title>Studion - Empresa</title>
+    <link rel="stylesheet" href="./css/contato.css">
+    <title>Studion - Contato</title>
 </head>
 <body>
     <nav class="nav">
@@ -21,7 +21,7 @@
         </label>
         <ul class="menu">
             <li>
-                <a href="#" class="active">Empresa</a>
+                <a href="./empresa.html">Empresa</a>
             </li>
             <li>
                 <a href="./eventos.html">Eventos</a>
@@ -33,41 +33,63 @@
                 <a href="./depoimentos.html">Depoimentos</a>
             </li>
             <li>
-                <a href="./contato.html">Contato</a>
+                <a href="#" class="active">Contato</a>
             </li>
         </ul>
     </nav>
 
     <header>
-        <img class="header__background" src="./images/header-empresa.jpg" alt="prédios">
+        <img class="header__background" src="./images/header-contato.png" alt="macbook">
+        <div class="header__background__mask"></div>
         <div class="container container__header">
-            <h2>.empresa</h2>
+            <h2>.contato</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
         </div>    
     </header>
 
     <main>
-        <section class="container section1">
-            <h4 class="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                <small>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    <br><br>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                </small>
-            </h4>
-            <div class="lines">
-                <img src="./images/pessoa.png" alt="pessoa falando ao celular" class="pessoa">
-            </div>
+        <section class="section1">
+            <section class="section1-left">
+                <h4>LIGUE PRA GENTE</h4>
+                <p>
+                    <img class="icon" src="./images/icons/phone.png" alt="telefone">
+                    +55 48 3223-5769
+                </p>
+                <p>
+                    <img class="icon" src="./images/icons/whatsapp.png" alt="whatsapp">
+                    +55 48 99943-7777
+                </p>
+                <h4>VENHA CONHECER NOSSA CASA</h4>
+                <p>
+                    <img class="icon" src="./images/icons/location.png" alt="telefone">
+                    Rua miguel duax, 129 - coqueiros Florianópolis/sc
+                </p>
+            </section>
+            <section class="section1-right">
+             <div class="sectio1-right__form-container">
+                 <h4>DEIXE SUA MENSAGEM</h4>
+                 <form>
+                    <label for="name">SEU NOME</label>
+                    <input id="name" type="text" />
+                    <label for="email">SEU EMAIL</label>
+                    <input id="email" type="email" />
+                    <label for="message">SUA MENSAGEM</label>
+                    <textarea id="message"></textarea>
+                    <button type="submit">ENVIAR</button>
+                 </form>
+             </div>
+            </section>
         </section>
 
         <section class="section2">
-            <h4 class="container">Quem Confia no nosso trabalho</h4>
-            <img src="./images/logos 1.png" alt="logos de empresas parceiras" class="container">
-        </section>
-
-        <section class="container section3">
-            <img src="./images/Video.jpg" alt="pessoa sentada na sacada de um predio olhando a vista ">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.509704550849!2d-48.580213423571564!3d-27.608726422645926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273797c70f436f%3A0xb32b6638eb2498c1!2sR.%20Miguel%20Daux%2C%20129%20-%20Coqueiros%2C%20Florian%C3%B3polis%20-%20SC%2C%2088080-220!5e0!3m2!1spt-BR!2sbr!4v1701118063930!5m2!1spt-BR!2sbr" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+            >
+            </iframe>
         </section>
     </main>
 
