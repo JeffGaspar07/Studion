@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/depoimentos.css">
     <title>Studion - Depoimentos</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav">
         <a href="./">
-            <h1>
+            <h1 class="logo">
                 Studi<span class="accent">on</span>
                 <span class="subtitle ">Eventos</span>
             </h1>
         </a>
-        <ul>
+        <input id="menu-toggle" type="checkbox" />
+        ,<label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
             <li>
-                <a href="./empresa.html" >Empresa</a>
+                <a href="./empresa.html">Empresa</a>
             </li>
             <li>
                 <a href="./eventos.html">Eventos</a>
@@ -34,48 +38,148 @@
         </ul>
     </nav>
 
-    <header class="container">
-        <h2>.home</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+    <header>
+        <img 
+        class="header__background" 
+        src="./images/header-depoimentos.jpg" 
+        alt="macbook"
+        style="filter: brightness(0.6);"
+        />
+        <div class="container container__header">
+            <h2 style="font-size: 11rem;">.depoimentos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+        </div>    
     </header>
 
-    <main></main>
+    <main>
+        <section class="container carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li 
+                  id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide"
+                >
+                    <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide3"
+                            class="carousel__prev"></a>
 
-    <footer>
-        <div class="container">
-        <h2>
-            Studi<span class="accent">on</span> 
-            <span class="subtitle ">Eventos</span>
-        </h2>
+                        <section class="section">
+                            <img class="user-image" src="./images/alberto.jpg" alt="alberto">
+                             <h4 class="name">
+                                Alberto Saldanha
+                                <small>CEO - vitamusic</small>
+                            </h4>
+                            <p class="quotes">“</p>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </p>
+                        </section>
+
+                        <a href="#carousel__slide2"
+                            class="carousel__next"></a>
+              </li>
+              <li 
+                  id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide"
+                >
+                <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                    class="carousel__prev"></a>
+
+                    <section class="section">
+                        <img class="user-image" src="./images/alberto.jpg" alt="alberto">
+                         <h4 class="name">
+                            Jefferson santos
+                            <small>CEO - vitamusic</small>
+                        </h4>
+                        <p class="quotes">“</p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </section>
+
+                    <a href="#carousel__slide3"
+                    class="carousel__next"></a>
+              </li>
+              <li 
+                id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                    class="carousel__prev"></a>
+
+                    <section class="section">
+                        <img class="user-image" src="./images/alberto.jpg" alt="alberto">
+                         <h4 class="name">
+                            Jeniffer gonçalves
+                            <small>CEO - vitamusic</small>
+                        </h4>
+                        <p class="quotes">“</p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </section>
+
+                    <a href="#carousel__slide1"
+                    class="carousel__next"></a>
+              </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2"
+                     class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3"
+                     class="carousel__navigation-button"></a>
+                </li>
+              </ol>
+            </aside>
+          </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <h2>
+                Studi<span class="accent">on</span> 
+                <span class="subtitle ">Eventos</span>
+            </h2>
             <form>
                 <label>
                     Receba news e promoções
                 </label>
                 <input type="email" placeholder="Email"/>
                 <button type="submit">
-                    <img src="./images/icons/send2.svg" alt="enviar">
+                    <img class="icon" src="./images/icons/send2.svg" alt="enviar">
                 </button>
             </form>
-            <ul>
+            <ul class="socials">
                 <li>
                     <a href="#">
-                        <img src="./images/icons/facebook.svg" alt="facebook">
+                        <img class="icon" src="./images/icons/facebook.svg" alt="facebook">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./images/icons/whatsapp.svg" alt="whatsapp">
+                        <img class="icon" src="./images/icons/whatsapp.svg" alt="whatsapp">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./images/icons/youtube.svg" alt="youtube">
+                        <img class="icon" src="./images/icons/youtube.svg" alt="youtube">
                     </a>
                 </li>
             </ul>
         </div>
         <hr/>
-        <p class="container">Studi<span>on</span> - Todos os direitos reservados</p>
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
