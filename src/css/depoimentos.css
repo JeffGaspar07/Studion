@@ -13,7 +13,7 @@
     }
   }
   
-  @keyframes tostart {
+  /* @keyframes tostart {
     75% {
       left: 0;
     }
@@ -26,7 +26,7 @@
     99% {
       left: 0;
     }
-  }
+  } */
   
   @keyframes snap {
     96% {
@@ -42,6 +42,7 @@
       scroll-snap-align: center;
     }
   }
+
   
   .carousel__viewport::-webkit-scrollbar {
     width: 0;
@@ -58,8 +59,8 @@
   
   .carousel {
     position: relative;
-    padding-top: 75%;
-    perspective: 100px;
+    padding-top: 60rem;
+    perspective: 10rem;
   }
   
   .carousel__viewport {
@@ -103,20 +104,20 @@
     .carousel__snapper {
       animation-name: tonext, snap;
       animation-timing-function: ease;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-iteration-count: 2;
     }
   
-    .carousel__slide:last-child .carousel__snapper {
-      animation-name: tostart, snap;
-    }
+    /* .carousel__slide:last-child .carousel__snapper {
+      animation-name: none;
+    } */
   }
   
-  @media (prefers-reduced-motion: reduce) {
+  /* @media (prefers-reduced-motion: reduce) {
     .carousel__snapper {
       animation-name: none;
     }
-  }
+  } */
   
   .carousel:hover .carousel__snapper,
   .carousel:focus-within .carousel__snapper {
@@ -126,7 +127,7 @@
   .carousel__navigation {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -4rem;
     left: 0;
     text-align: center;
   }
@@ -138,9 +139,9 @@
   
   .carousel__navigation-button {
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #333;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #fff;
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
@@ -153,54 +154,42 @@
   .carousel__prev,
   .carousel__next {
     position: absolute;
-    top: 0;
-    margin-top: 37.5%;
-    width: 4rem;
-    height: 4rem;
+    top: 50%;
+    width: 8rem;
+    height: 8rem;
     transform: translateY(-50%);
-    border-radius: 50%;
-    font-size: 0;
     outline: 0;
   }
-  
-  .carousel::before,
-  .carousel__prev {
-    left: -1rem;
-  }
-  
+
   .carousel::after,
   .carousel__next {
-    right: -1rem;
+    right: 1rem;
   }
   
   .carousel::before,
   .carousel::after {
     content: '';
     z-index: 1;
-    background-color: #333;
-    background-size: 1.5rem 1.5rem;
+    background-size: 5rem 5rem;
     background-repeat: no-repeat;
     background-position: center center;
     color: #fff;
-    font-size: 2.5rem;
-    line-height: 4rem;
-    text-align: center;
     pointer-events: none;
   }
   
   .carousel::before {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+    background-image: url("../images/icons/left.png");
   }
   
   .carousel::after {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+    background-image: url("../images/icons/right.png");
   }
   
   /* ______________________________________________ */
 
   main {
     background-color: var(--color-secondary);
-    padding-top: 6rem;
+    padding-bottom: 8rem;
 }
 
 .section {
@@ -215,7 +204,7 @@
 
 .user-image {
     width: 100%;
-    max-width: 32rem;
+    max-width: 20rem;
 }
 
 .name {
@@ -238,11 +227,65 @@
 }
 
 .text {
-    max-width: 60rem;
+    max-width: 70rem;
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--text-secondary);
     text-wrap: pretty;
+    padding: 0 2 rem;
 }
 
 /* _______________________________ */
+
+@media screen and (max-width: 800px) {
+  .user-image {
+    max-width: 16rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .quotes {
+    font-size: 4rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+    max-width: 50rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .user-image {
+    max-width: 14rem;
+  }
+
+  .name {
+    font-size: 2.4rem;
+  }
+
+  .name small {
+    font-size: 1rem;
+  }
+
+  .quotes {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+    max-width: 30rem;
+  }
+
+  .carousel::before,
+  .carousel::after {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .carousel__navigation-button {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
