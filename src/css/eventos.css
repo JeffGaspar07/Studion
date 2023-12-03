@@ -75,3 +75,46 @@
 
     box-shadow: 0.1rem 0.5rem 1rem #333;
 }
+
+@media screen and (max-width: 800px) {
+    .event__image {
+        max-width: 14rem;
+        min-height: 14rem;
+    }
+
+    .event__title {
+        font-size: 1.4rem;
+    }
+    .event__time {
+        font-size: 1.2rem;
+    }
+
+    .event__time .icon {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .event__description {
+        font-size: 1rem;
+    }
+
+    .event__buy-ticket{
+        width: 12rem;
+        height: 4rem;
+        font-size: 0.8rem;
+    }
+
+  }
+  
+  @media screen and (max-width: 550px) {
+    .event {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 35rem;
+        text-align: center;
+    }
+
+    .event__info {
+        align-items: center;
+    }
+  }

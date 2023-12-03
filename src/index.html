@@ -39,19 +39,97 @@
     </nav>
 
     <header>
-        <img 
-        class="header__background" 
-        src="./images/headers/header-empresa.jpg" 
-        alt="macbook"
-        style="filter: brightness(0.2);"
-        />
-        <div class="container container__header">
-            <h2>.home</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
-        </div>    
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li 
+                  id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide"
+                >
+                    <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide3"
+                            class="carousel__prev"></a>
+
+                        <img
+                        class="slide__background-image" 
+                        src="./images/home/banner1.jpg" 
+                        alt="banner1"
+                        />
+                        <div class="slide__info">
+                            <div class="slide__info__content">
+                                <h6 class="slide__info__date">
+                                    <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÁS 19H
+                                </h6>
+                                <h2 class="slide__info__title">
+                                    <span class="slide__info__accent">CREATIVE</span> MINDS
+                                </h2>
+                                <button class="slide__info__button">saiba mais</button>
+                            </div>
+                        </div>
+
+                        <a href="#carousel__slide2"
+                            class="carousel__next"></a>
+              </li>
+            </ol>
+          </section>   
     </header>
 
     <main>
+        <section class="counter">
+            <ul class="container container_container">
+                <li>
+                    <h3>
+                        +  DE <span class="counter__number">140</span> 
+                        <small>EVENTOS REALIZADOS</small> 
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        + DE <span class="counter__number">280000</span> 
+                        <small>INGRESSOS VENDIDOS</small> 
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        + DE <span class="counter__number">84</span> 
+                        <small>EMPRESAS ATENDIDAS</small> 
+                    </h3>
+                </li>
+            </ul>
+        </section>
+
+        <section class="container institutional">
+            <img 
+            class="institutional__image"
+            src="./images/home/institutional.jpg" 
+            alt="institutional" 
+            />
+            <div class="institutional__info">
+                <h6>
+                    FAZEMOS O SEU EVENTO ACONTECER
+                </h6>
+                <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore laboriosam est, aspernatur totam assumenda accusamus magni fugit velit repellat! Non repudiandae velit blanditiis suscipit aperiam, quasi iusto doloremque? Perspiciatis, at!</p>
+                <a href="./empresa.html">SAIBA MAIS</a>
+            </div>
+        </section>
+
+        <section class="quote">
+            <div class="container quote__container">
+                <div class="quote__content">
+                    <h6>
+                        Você informa a temática e nós planejamos um evento com tecnologia e
+                    </h6>
+                    <h2>
+                        <span>MUITO+</span> DIVERSÃO
+                    </h2>
+                    <a href="./contato.html">FAZER COTAÇÃO</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">

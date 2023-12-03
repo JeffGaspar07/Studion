@@ -28,6 +28,10 @@ header {
     font-family: var(--font-primary);
 }
 
+.container__header .testimonials-title{
+    font-size: 11rem;
+}
+
 .container__header p {
     color: var(--text-primary);
     font-size: 2rem;
@@ -41,6 +45,10 @@ header {
         font-size: 12rem;
     }
 
+    .container__header .testimonials-title{
+        font-size: 7rem;
+    }
+
     .container__header p {
         font-size: 1.8rem;
         max-width: 50rem;
@@ -50,6 +58,10 @@ header {
 @media screen and (max-width: 460px) {
     .container__header h2 {
         font-size: 6rem;
+    }
+
+    .container__header .testimonials-title{
+        font-size: 4rem;
     }
 
     .container__header p {
