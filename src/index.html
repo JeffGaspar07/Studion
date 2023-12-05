@@ -6,6 +6,7 @@
     <title>Studion</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <nav class="nav">
@@ -70,13 +71,72 @@
                         <a href="#carousel__slide2"
                             class="carousel__next"></a>
               </li>
+              <li 
+                  id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide"
+                >
+                    <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide1"
+                            class="carousel__prev"></a>
+
+                        <img
+                        class="slide__background-image" 
+                        src="./images/home/banner2.jpg" 
+                        alt="banner2"
+                        style="filter: brightness(0.5);"
+                        />
+                        <div class="slide__info">
+                            <div class="slide__info__content">
+                                <h6 class="slide__info__date">
+                                    <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÁS 19H
+                                </h6>
+                                <h2 class="slide__info__title">
+                                    <span class="slide__info__accent">FEST</span> FOWARD
+                                </h2>
+                                <button class="slide__info__button">saiba mais</button>
+                            </div>
+                        </div>
+
+                        <a href="#carousel__slide3"
+                            class="carousel__next"></a>
+              </li>
+              <li 
+                  id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide"
+                >
+                    <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide2"
+                            class="carousel__prev"></a>
+
+                        <img
+                        class="slide__background-image" 
+                        src="./images/home/banner3.jpg" 
+                        alt="banner3"
+                        />
+                        <div class="slide__info">
+                            <div class="slide__info__content">
+                                <h6 class="slide__info__date">
+                                    <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÁS 19H
+                                </h6>
+                                <h2 class="slide__info__title">
+                                    <span class="slide__info__accent">SHOE</span> FORWARD
+                                </h2>
+                                <button class="slide__info__button">saiba mais</button>
+                            </div>
+                        </div>
+
+                        <a href="#carousel__slide1"
+                            class="carousel__next"></a>
+              </li>
             </ol>
           </section>   
     </header>
 
     <main>
         <section class="counter">
-            <ul class="container container_container">
+            <ul class="container counter_container">
                 <li>
                     <h3>
                         +  DE <span class="counter__number">140</span> 
@@ -168,5 +228,9 @@
         <hr/>
         <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
