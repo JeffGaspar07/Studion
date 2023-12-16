@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studion</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Studion</title>
 </head>
 <body>
     <nav class="nav">
@@ -40,22 +40,11 @@
     </nav>
 
     <header>
-        <section class="carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
-              <li 
-                  id="carousel__slide1"
-                  tabindex="0"
-                  class="carousel__slide"
-                >
-                    <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide3"
-                            class="carousel__prev"></a>
-
-                        <img
-                        class="slide__background-image" 
-                        src="./images/home/banner1.jpg" 
-                        alt="banner1"
-                        />
+        <section class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="slide__background-image" src="./images/home/banner1.jpg" alt="banner1" />
                         <div class="slide__info">
                             <div class="slide__info__content">
                                 <h6 class="slide__info__date">
@@ -67,25 +56,10 @@
                                 <button class="slide__info__button">saiba mais</button>
                             </div>
                         </div>
-
-                        <a href="#carousel__slide2"
-                            class="carousel__next"></a>
-              </li>
-              <li 
-                  id="carousel__slide2"
-                  tabindex="0"
-                  class="carousel__slide"
-                >
-                    <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide1"
-                            class="carousel__prev"></a>
-
-                        <img
-                        class="slide__background-image" 
-                        src="./images/home/banner2.jpg" 
-                        alt="banner2"
-                        style="filter: brightness(0.5);"
-                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slide__background-image" src="./images/home/banner2.jpg" alt="banner2"
+                            style="filter: brightness(0.5);" />
                         <div class="slide__info">
                             <div class="slide__info__content">
                                 <h6 class="slide__info__date">
@@ -97,24 +71,9 @@
                                 <button class="slide__info__button">saiba mais</button>
                             </div>
                         </div>
-
-                        <a href="#carousel__slide3"
-                            class="carousel__next"></a>
-              </li>
-              <li 
-                  id="carousel__slide3"
-                  tabindex="0"
-                  class="carousel__slide"
-                >
-                    <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide2"
-                            class="carousel__prev"></a>
-
-                        <img
-                        class="slide__background-image" 
-                        src="./images/home/banner3.jpg" 
-                        alt="banner3"
-                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slide__background-image" src="./images/home/banner3.jpg" alt="banner3" />
                         <div class="slide__info">
                             <div class="slide__info__content">
                                 <h6 class="slide__info__date">
@@ -126,11 +85,11 @@
                                 <button class="slide__info__button">saiba mais</button>
                             </div>
                         </div>
-
-                        <a href="#carousel__slide1"
-                            class="carousel__next"></a>
-              </li>
-            </ol>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
           </section>   
     </header>
 
@@ -229,8 +188,10 @@
         <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
 
-    
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="http://ciromattia.github.io/jquery.counterup/jquery.counterup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

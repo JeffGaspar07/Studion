@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/depoimentos.css">
     <title>Studion - Depoimentos</title>
 </head>
@@ -52,21 +53,14 @@
     </header>
 
     <main>
-        <section class="container carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
-              <li 
-                  id="carousel__slide1"
-                  tabindex="0"
-                  class="carousel__slide"
-                >
-                    <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide3"
-                            class="carousel__prev"></a>
-
+        <section class="container slide">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <section class="section">
                             <img class="user-image" src="./images/testimonials/number-one.jpg" alt="alberto">
                              <h4 class="name">
-                                Alberto Saldanha
+                                alberto Saldanha 
                                 <small>CEO - vitamusic</small>
                             </h4>
                             <p class="quotes">“</p>
@@ -74,74 +68,38 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             </p>
                         </section>
-
-                        <a href="#carousel__slide2"
-                            class="carousel__next"></a>
-              </li>
-              <li 
-                  id="carousel__slide2"
-                  tabindex="0"
-                  class="carousel__slide"
-                >
-                <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1"
-                    class="carousel__prev"></a>
-
-                    <section class="section">
-                        <img class="user-image" src="./images/testimonials/number-two (1).png" alt="alberto">
-                         <h4 class="name">
-                            Mariana Bastos
-                            <small>Prod de eventos - +Midia</small>
-                        </h4>
-                        <p class="quotes">“</p>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        </p>
-                    </section>
-
-                    <a href="#carousel__slide3"
-                    class="carousel__next"></a>
-              </li>
-              <li 
-                id="carousel__slide3"
-                tabindex="0"
-                class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2"
-                    class="carousel__prev"></a>
-
-                    <section class="section">
-                        <img class="user-image" src="./images/testimonials/number-three.png" alt="alberto">
-                         <h4 class="name">
-                            Guilherme Silva
-                            <small>Gerente de marketing - comusic</small>
-                        </h4>
-                        <p class="quotes">“</p>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        </p>
-                    </section>
-
-                    <a href="#carousel__slide1"
-                    class="carousel__next"></a>
-              </li>
-            </ol>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide1"
-                     class="carousel__navigation-button"></a>
-                </li>
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide2"
-                     class="carousel__navigation-button"></a>
-                </li>
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide3"
-                     class="carousel__navigation-button"></a>
-                </li>
-              </ol>
-            </aside>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="section">
+                            <img class="user-image" src="./images/testimonials/number-two (1).png" alt="alberto">
+                             <h4 class="name">
+                                Mariana Bastos
+                                <small>Prod de eventos - +Midia</small>
+                            </h4>
+                            <p class="quotes">“</p>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </p>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="section">
+                            <img class="user-image" src="./images/testimonials/number-three.png" alt="alberto">
+                             <h4 class="name">
+                                Guilherme Silva
+                                <small>Gerente de marketing - comusic</small>
+                            </h4>
+                            <p class="quotes">“</p>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
           </section>
     </main>
 
@@ -181,5 +139,8 @@
         <hr/>
         <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./depoimentos.js"></script>
 </body>
 </html>

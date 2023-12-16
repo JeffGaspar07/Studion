@@ -10,42 +10,78 @@
 </head>
 
 <body>
-    <!-- Slider main container -->
     <div class="swiper">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide">
+                <img class="slide__background-image" src="./images/home/banner1.jpg" alt="banner1" />
+                <div class="slide__info">
+                    <div class="slide__info__content">
+                        <h6 class="slide__info__date">
+                            <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÁS 19H
+                        </h6>
+                        <h2 class="slide__info__title">
+                            <span class="slide__info__accent">CREATIVE</span> MINDS
+                        </h2>
+                        <button class="slide__info__button">saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img class="slide__background-image" src="./images/home/banner2.jpg" alt="banner2"
+                    style="filter: brightness(0.5);" />
+                <div class="slide__info">
+                    <div class="slide__info__content">
+                        <h6 class="slide__info__date">
+                            <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÁS 19H
+                        </h6>
+                        <h2 class="slide__info__title">
+                            <span class="slide__info__accent">FEST</span> FOWARD
+                        </h2>
+                        <button class="slide__info__button">saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img class="slide__background-image" src="./images/home/banner3.jpg" alt="banner3" />
+                <div class="slide__info">
+                    <div class="slide__info__content">
+                        <h6 class="slide__info__date">
+                            <span class="slide__info__accent">PRÓXIMO EVENTO</span> - DIA 25 DE SETEMBRO ÁS 19H
+                        </h6>
+                        <h2 class="slide__info__title">
+                            <span class="slide__info__accent">SHOE</span> FORWARD
+                        </h2>
+                        <button class="slide__info__button">saiba mais</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        // If we need pagination
-        pagination: {
-        el: '.swiper-pagination',
-        },
-        // Navigation arrows
-        navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        },
+            // Optional parameters
+            autoplay: {
+                delay: 2000,
+                pauseOnMouseEnter: true,
+            },
+            effect: 'cube',
+            loop: true,
+            grabCursor: true,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            speed: 1000,
         });
     </script>
 </body>
