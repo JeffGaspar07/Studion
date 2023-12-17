@@ -15,11 +15,7 @@
                 <span class="subtitle ">Eventos</span>
             </h1>
         </a>
-        <input id="menu-toggle" type="checkbox" />
-        ,<label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
-        <ul class="menu">
+        <ul id="menu" class="desktop">
             <li>
                 <a href="./empresa.html">Empresa</a>
             </li>
@@ -36,6 +32,9 @@
                 <a href="#" class="active">Contato</a>
             </li>
         </ul>
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <header>
@@ -105,11 +104,11 @@
                 Studi<span class="accent">on</span> 
                 <span class="subtitle ">Eventos</span>
             </h2>
-            <form>
+            <form id="newslatter-form">
                 <label>
                     Receba news e promoções
                 </label>
-                <input type="email" placeholder="Email"/>
+                <input id="email" type="email" placeholder="Email"/>
                 <button type="submit">
                     <img class="icon" src="./images/icons/send2.svg" alt="enviar">
                 </button>
@@ -135,5 +134,10 @@
         <hr/>
         <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
